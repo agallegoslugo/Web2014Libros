@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Sistemas de Libros</title>
+		<meta charset = "UTF-8">
+	</head>
+
+  <body>
+
+		<table align="center"> <!-- ENCABEZADO-->
+			
+			<tr>
+			    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+			      	<tr>
+			        	<td width="511" background="images/index_08.gif">
+				        	<table width="100%" border="0" cellspacing="10" cellpadding="0">
+					          	<tr>
+					            	<td width="18%">&nbsp;</td>
+					            	<td width="82%">
+
+					            	<table width="100%" border="0" cellspacing="10" cellpadding="0">
+						              	<tr>
+						                	<td><h2 class="blye-text-regular">BIBLIO-TECH</h2></td>
+						              	</tr>
+						              	<tr>
+						                	<td class="gray-text-regular">La tecnología al servicio de la cultura</td>
+						             	</tr>
+									</table></td>
+					          	</tr>
+			        		</table></td>
+				        <td><img src="images/libros.jpg" width="350" height="150" alt=""></td>
+				      	</tr>
+		    		</table></td>
+			</tr>
+
+		</table>
+
+		<hr> <!--linea horizontal-->
+
+		<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+
+			<tr>
+				<td>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			     	<tr align="center">
+				        <td><a href="index.html">Inicio</a></td>
+                <td><a href="mostrar.html">Mostrar libros</a></td>
+                <td><a href="agregarlibro.html">Agregar Libro</a></td>
+			      	</tr>
+			    </table></td>
+
+			</tr>
+		</table>
+		
+		<hr> <!--linea horizontal-->
+
+
+<article class="content">
+    <h1 align="center">Base de Datos Libros</h1>
+    <section>
+     <h3 align="center">Agregar Libros</h3>
+   	  <h5>
+      
+             
+            <form id="form1" name="form1" method="post"> 
+            <p align="center"> DATOS GENERALES
+            	<p align="center"> Título:  
+            		<input name="titulo" type="text" id="titulo" value="" size=40 />
+            		Autores:  
+           			<input name="autores" type="text" id="autores" value="" size=15 />	 
+                Año:   
+      				  <input name="año" type="numeric" id="año" value="" size=10 />         
+            	</p>
+                
+                <p align="center"> DATOS LIBRO </p>
+
+
+              <!-- TABLA VERSION e IDIOMA -->
+
+              <table width="400" border="0" align="center" cellpadding="0" cellspacing="0">
+                <h5>
+                  <tr align="center">
+
+                    <td><a><p align="center"><h5 align="center">Versión </h5></p> <!--VERSION -->
+                      <h5><p align="center">
+                          Impresa:
+                          <input name="impresa" type="checkbox" id="impresa" value="" size=40 /> 
+                          </p>
+                          <p align="center">
+                          Digital:
+                          <input name="digital" type="checkbox" id="digital" value="" size=5 /> 
+                          </p>
+                          <p align="center">
+                          Otro:
+                          <input name="otro" type="checkbox" id="otro" value="" size=5 /> 
+                      </p>
+                      <h5>
+                      </a></td>
+
+                    <td><a><p align="center"><h5>Idioma</h5></p>   <!--IDIOMA -->
+                      <p align="center"><h5>
+                          Inglés: 
+                          <input name="idiom_ing" type="radio" id="idiom_ing" value="" size=5 /> 
+                          </p>
+                          <p>
+                          Español: 
+                          <input name="idiom_esp" type="radio" id="idiom_esp" value="" size=5 /> 
+                          </p>
+                          </h5>
+                    </p></a></td>
+
+                  </tr>
+                <h5>
+              </table>
+
+                    </h5>
+                    <p align="center"> 
+
+
+                          <select>
+                          <option value="mate">Mantemáticas</option>
+                          <option value="lite">Literatura</option>
+                          <option value="inform">Informática</option>
+                          <option value="fisi">Física</option>
+                          </select>
+
+                    </p>
+                    <p align="center">
+                        Notas
+                        </p>
+                        <p align="center"> 
+
+                          <input type="text"
+                                 cols="80" 
+                                 rows="5" 
+                                 style="width:400px; height:100px;" 
+                                 name="notas" 
+                                 id="notas" 
+                                 value=""
+                                 placeholder="Escriba aquí" />             
+                        </p>
+ 
+            <p>&nbsp;</p> 
+            <p align="center">
+            <label> 
+            <input type="submit" name="button" id="button" value="Enviar" onclick="this.form.action = 'insertar.php'" /> 
+            </label> 
+            <!--<label> 
+            <input type="submit" name="button2" id="button2" value="Vista Previa" onclick="this.form.action = 'consulta.php'" /> 
+            </label>
+            -->
+            <input type="reset" name="	btndelte" id="btndelte" value="Limpiar">        
+            </form>
+      	</h5>
+    </section>
+    <!-- end .content -->
+  </article>
+
+			
+
+
+			<hr> <!--linea horizontal-->
+
+			<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0"> <!--FOOTER-->
+			  <tr>
+			    <td height="59" background="images/index_38.gif"><table width="100%" border="0" cellspacing="10" cellpadding="0">
+			      <tr>
+			        <td width="50%" align="center">Copyright Alejandro Gallegos Lugo	(c) gallegoscomputadoras.com. Todos los derechos reservados. 
+			Diseño de: <a href="https://www.facebook.com/alejandro.gallegoslugo" style="color:#666666">Alejandro Gallegos Lugo</a>.</td>
+			      </tr>
+			    </table></td>
+			  </tr>
+		</table>
+	</body>
+</html>
